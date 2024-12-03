@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_WappSC001_name": {
+            "value": null
+        },
+        "components_WappSC001_name": {
+            "value": null
+        },
+        "virtualMachines_VMSC001_name": {
+            "value": null
+        },
+        "privateEndpoints_VM_HOST_name": {
+            "value": null
+        },
+        "networkInterfaces_vmsc001214_name": {
+            "value": null
+        },
+        "publicIPAddresses_PIP_SC_001_name": {
+            "value": null
+        },
+        "virtualNetworks_vnet_wciuslei_name": {
+            "value": null
+        },
+        "applicationGateways_AGN_SC_001_name": {
+            "value": null
+        },
+        "networkSecurityGroups_NSG_SC_001_name": {
+            "value": null
+        },
+        "bastionHosts_vnet_wciuslei_bastion_name": {
+            "value": null
+        },
+        "flexibleServers_wappsc001_dbserver_name": {
+            "value": null
+        },
+        "serverfarms_ASP_OmgevingSeniorConnect_9735_name": {
+            "value": null
+        },
+        "schedules_shutdown_computevm_vmsc001_name": {
+            "value": null
+        },
+        "privateEndpoints_endpoint_7ggbv7m3a2lba_name": {
+            "value": null
+        },
+        "privateDnsZones_privatelink_azurewebsites_net_name": {
+            "value": null
+        },
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
+        },
+        "privateDnsZones_privatelink_mysql_database_azure_com_name": {
+            "value": null
+        },
+        "ApplicationGatewayWebApplicationFirewallPolicies_WAF_SC_001_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___wappsc001_name": {
+            "value": null
+        },
+        "workspaces_DefaultWorkspace_850e6ef8_4a4d_484a_96a7_8015a6d70c4c_NEU_externalid": {
+            "value": null
+        }
+    }
+}
