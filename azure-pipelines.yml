@@ -20,6 +20,7 @@ steps:
     location: 'North-Europe'
     templateLocation: 'https://github.com/DamianVSpaenDonck/SeniorConnect/blob/main/template.json'
     csmFileLink: 'https://github.com/DamianVSpaenDonck/SeniorConnect/blob/main/template.json'
+    csmParametersFile: 'https://github.com/DamianVSpaenDonck/SeniorConnect/blob/main/parameters.json'
     overrideParameters: '-projectName SeniorConnect'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
