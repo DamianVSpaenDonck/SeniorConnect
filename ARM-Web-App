@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2021-02-01",
+      "location": "North Europe",
+      "name": "SC-Wapp-001",
+      "properties": {
+        "serverFarmId": "[resourceId('Microsoft.Web/serverFarms', 'SC-Wapp-001-plan')]",
+        "siteConfig": {
+          "appSettings": [
+            {
+              "name": "WEBSITE_NODE_DEFAULT_VERSION",
+              "value": "10.14"
+            }
+          ]
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverFarms', 'SC-Wapp-001-plan')]"
+      ]
+    },
+    {
+      "type": "Microsoft.Web/serverFarms",
+      "apiVersion": "2021-02-01",
+      "location": "North Europe",
+      "sku": {
+        "Tier": "Standard",
+        "Name": "S1"
+      },
+      "name": "SC-Wapp-001-plan",
+      "properties": {
+        "name": "SC-Wapp-001-plan"
+      }
+    }
+  ]
+}
